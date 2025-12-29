@@ -1,0 +1,9 @@
+{
+	"name": "my-azure-project-data-factory",
+	"location": "swedencentral",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "8f87813a-9716-4153-9bcb-a5cb307c9259",
+		"tenantId": "40c9f6ed-0ea7-4651-b194-d5c2b844e940"
+	}
+}
