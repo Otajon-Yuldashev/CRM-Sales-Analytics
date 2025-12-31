@@ -93,6 +93,38 @@
 					"enableStaging": false,
 					"translator": {
 						"type": "TabularTranslator",
+						"mappings": [
+							{
+								"source": {
+									"name": "Table",
+									"type": "String"
+								},
+								"sink": {
+									"name": "TableName",
+									"type": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Field",
+									"type": "String"
+								},
+								"sink": {
+									"name": "Field",
+									"type": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Description",
+									"type": "String"
+								},
+								"sink": {
+									"name": "Description",
+									"type": "varchar"
+								}
+							}
+						],
 						"typeConversion": true,
 						"typeConversionSettings": {
 							"allowDataTruncation": true,
