@@ -23,4 +23,5 @@ CREATE TABLE sales_pipeline_cleaned (
       ,[engage_date] DATE
       ,[close_date] DATE
       ,[close_value] INT
+
 )
