@@ -1,0 +1,49 @@
+{
+	"name": "salesRaw",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "DestinationDatabase",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "opportunity_id",
+				"type": "varchar"
+			},
+			{
+				"name": "sales_agent",
+				"type": "varchar"
+			},
+			{
+				"name": "product",
+				"type": "varchar"
+			},
+			{
+				"name": "account",
+				"type": "varchar"
+			},
+			{
+				"name": "deal_stage",
+				"type": "varchar"
+			},
+			{
+				"name": "engage_date",
+				"type": "varchar"
+			},
+			{
+				"name": "close_date",
+				"type": "varchar"
+			},
+			{
+				"name": "close_value",
+				"type": "varchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "sales_pipeline_stg"
+		}
+	}
+}

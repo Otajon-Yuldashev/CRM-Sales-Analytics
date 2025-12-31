@@ -1,0 +1,29 @@
+{
+	"name": "dataDictionaryRaw",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "DestinationDatabase",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "TableName",
+				"type": "varchar"
+			},
+			{
+				"name": "Field",
+				"type": "varchar"
+			},
+			{
+				"name": "Description",
+				"type": "varchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "data_dictionary_stg"
+		}
+	}
+}

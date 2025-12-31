@@ -1,0 +1,45 @@
+{
+	"name": "accountsRaw",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "DestinationDatabase",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "account",
+				"type": "varchar"
+			},
+			{
+				"name": "sector",
+				"type": "varchar"
+			},
+			{
+				"name": "year_established",
+				"type": "varchar"
+			},
+			{
+				"name": "revenue",
+				"type": "varchar"
+			},
+			{
+				"name": "employees",
+				"type": "varchar"
+			},
+			{
+				"name": "office_location",
+				"type": "varchar"
+			},
+			{
+				"name": "subsidiary_of",
+				"type": "varchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "accounts_stg"
+		}
+	}
+}

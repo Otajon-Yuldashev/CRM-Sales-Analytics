@@ -1,0 +1,25 @@
+{
+	"name": "sales_data_trigger",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Started",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "CloudtoCloud",
+					"type": "PipelineReference"
+				}
+			}
+		],
+		"type": "ScheduleTrigger",
+		"typeProperties": {
+			"recurrence": {
+				"frequency": "Hour",
+				"interval": 15,
+				"startTime": "2025-12-30T10:21:00",
+				"endTime": "2026-01-02T00:21:00",
+				"timeZone": "W. Europe Standard Time"
+			}
+		}
+	}
+}

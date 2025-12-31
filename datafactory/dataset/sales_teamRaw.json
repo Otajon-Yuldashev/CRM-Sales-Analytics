@@ -1,0 +1,29 @@
+{
+	"name": "sales_teamRaw",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "DestinationDatabase",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "sales_agent",
+				"type": "varchar"
+			},
+			{
+				"name": "manager",
+				"type": "varchar"
+			},
+			{
+				"name": "regional_office",
+				"type": "varchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "sales_teams_stg"
+		}
+	}
+}

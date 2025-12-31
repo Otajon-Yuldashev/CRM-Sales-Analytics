@@ -1,0 +1,36 @@
+{
+	"name": "products",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "SourceDatabase",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "products.csv",
+				"container": "raw-data"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "product",
+				"type": "String"
+			},
+			{
+				"name": "series",
+				"type": "String"
+			},
+			{
+				"name": "sales_price",
+				"type": "String"
+			}
+		]
+	}
+}

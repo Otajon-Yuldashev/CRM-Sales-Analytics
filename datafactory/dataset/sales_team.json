@@ -1,0 +1,36 @@
+{
+	"name": "sales_team",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "SourceDatabase",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "sales_teams.csv",
+				"container": "raw-data"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "sales_agent",
+				"type": "String"
+			},
+			{
+				"name": "manager",
+				"type": "String"
+			},
+			{
+				"name": "regional_office",
+				"type": "String"
+			}
+		]
+	}
+}

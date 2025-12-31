@@ -1,0 +1,29 @@
+{
+	"name": "productsRaw",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "DestinationDatabase",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "product",
+				"type": "varchar"
+			},
+			{
+				"name": "series",
+				"type": "varchar"
+			},
+			{
+				"name": "sales_price",
+				"type": "varchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "products_stg"
+		}
+	}
+}

@@ -1,0 +1,56 @@
+{
+	"name": "sales",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "SourceDatabase",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "sales_pipeline.csv",
+				"container": "raw-data"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "opportunity_id",
+				"type": "String"
+			},
+			{
+				"name": "sales_agent",
+				"type": "String"
+			},
+			{
+				"name": "product",
+				"type": "String"
+			},
+			{
+				"name": "account",
+				"type": "String"
+			},
+			{
+				"name": "deal_stage",
+				"type": "String"
+			},
+			{
+				"name": "engage_date",
+				"type": "String"
+			},
+			{
+				"name": "close_date",
+				"type": "String"
+			},
+			{
+				"name": "close_value",
+				"type": "String"
+			}
+		]
+	}
+}
